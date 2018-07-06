@@ -5,6 +5,8 @@ end
 
 # Define your WIN_COMBINATIONS constant
 
+WIN_COMBINATIONS = []
+
 def won?(board)
   for each combination in WIN_COMBINATIONS do
     position_1 = board[combination[0]]
@@ -21,3 +23,5 @@ def won?(board)
   end
 
 end
+
+
