@@ -86,7 +86,7 @@ def winner(board)
     else
       i += 1
       if i == 8
-        return false
+        return nil
       end
     end
   end
