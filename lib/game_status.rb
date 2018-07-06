@@ -42,7 +42,9 @@ def full?(board)
   board.each do
     if position_taken?(board, i)
       i += 1
-      i == 9 ? true :
+      if i == 9 
+        return true
+      end
     else
       return false
     end
