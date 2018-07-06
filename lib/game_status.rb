@@ -30,7 +30,7 @@ def won?(board)
       false
     end
   end
-  if combination
+  if combination.length == 3
     return combination
   else
     return false
