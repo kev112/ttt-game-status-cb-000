@@ -72,7 +72,7 @@ def over?(board)
 end
 
 
-def winner?(board)
+def winner(board)
   for combination in WIN_COMBINATIONS
     position_1 = board[combination[0]]
     position_2 = board[combination[1]]
