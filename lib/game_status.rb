@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  for each combination in WIN_COMBINATIONS do
+  for each combination in WIN_COMBINATIONS 
     position_1 = board[combination[0]]
     position_2 = board[combination[1]]
     position_3 = board[combination[2]]
@@ -29,5 +29,4 @@ def won?(board)
     else
       false
     end
-  end
 end
