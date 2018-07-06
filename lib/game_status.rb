@@ -30,5 +30,9 @@ def won?(board)
       false
     end
   end
-  combination ? combination : return false
+  if combination
+    return combination
+  else
+    return false
+  end
 end
