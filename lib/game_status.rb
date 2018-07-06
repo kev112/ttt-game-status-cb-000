@@ -38,9 +38,11 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |i|
+  i = 0
+  board.each do
     if position_taken?(board, i)
-
+      i += 1
+      i == 9 ? true 
     else
       return false
     end
