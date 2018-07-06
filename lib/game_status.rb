@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  for combination in WIN_COMBINATIONS
+  combination = for combination in WIN_COMBINATIONS
     position_1 = board[combination[0]]
     position_2 = board[combination[1]]
     position_3 = board[combination[2]]
@@ -27,7 +27,8 @@ def won?(board)
     elsif position_1 == 'O' && position_2 == 'O' && position_3 == 'O'
       return combination
     else
-      return false
+      false
     end
   end
+  
 end
