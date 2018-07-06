@@ -73,6 +73,7 @@ end
 
 
 def winner(board)
+  i = 0
   for combination in WIN_COMBINATIONS
     position_1 = board[combination[0]]
     position_2 = board[combination[1]]
@@ -83,7 +84,10 @@ def winner(board)
     elsif position_1 == 'O' && position_2 == 'O' && position_3 == 'O'
       return 'O'
     else
-      false
+      i += 1
+      if i == 8
+        return false
+      end
     end
   end
 end
